@@ -11,16 +11,20 @@
     @apply bg-light;
   }
   .title {
-    @apply text-dark not-italic font-medium leading-normal uppercase text-center;
+    @apply text-light text-5xl font-bold not-italic tracking-[2.4px];
   }
-  .title-h1-italic {
-    @apply italic text-2xl 2xl:text-[2rem];
+  .header__text {
+    @apply text-cement uppercase font-[Open_Sans] text-[11px] font-semibold;
+  }
+  .header__descr {
+    @apply text-cement text-base font-normal font-[Open_Sans] leading-[26px] tracking-[0.32px];
   }
 }
 
 @theme {
-  --color-bgblu: rgba(25, 28, 38);
-  --color-light: #fafafa;
+  --color-cement: #9da4bd;
+  --color-light: #fff;
+
   --color-dark: #232323;
   --color-ui-active: #d9d9d9;
   --color-ceramic: #c69978;

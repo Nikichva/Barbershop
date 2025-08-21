@@ -4,29 +4,61 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Barbershop</title>
   </head>
   <body>
-    <div id="app"></div>
-    <h1 class="uppercase text-red-950 text-4xl text-center mt-10">
-      Hello vite tailwind
-    </h1>
-    <a href="#" class="block text-black"
-      ><span class="block icon-facebook text-xl"></span
-    ></a>
-    <a href="#" class="block text-black"
-      ><span class="block icon-x text-xl"></span
-    ></a>
-    <a href="#" class="block text-black"
-      ><span class="block icon-phone text-xl"></span
-    ></a>
-    <a href="#" class="block text-black"
-      ><span class="block icon-location text-xl"></span
-    ></a>
-    <a href="#" class="block text-ceramic"
-      ><span class="block icon-linkedin2 text-9xl"></span
-    ></a>
-    <img src="public/img/bg-img_mob@1x.png" alt="" class="bg-bgblu" />
+    <!-- <div id="app"></div> -->
+    <!-- Header -->
+    <header
+      class="pt-10 px-8 bg-[linear-gradient(rgba(25,28,38,.20),rgba(25,28,38,.20)),url(/img/slider-img-3.jpg)] bg-center bg-cover pb-52"
+    >
+      <div class="container mx-auto">
+        <div class="">
+          <nav class="flex justify-between items-center">
+            <div><img src="/img/Logo.png" alt="logo" /></div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </nav>
+          <div>
+            <h2
+              class="header__text mt-28 inline-flex items-center gap-6 before:content-[''] before:block before:h-[1px] before:w-15 before:bg-cement"
+            >
+              A hair salon for men in Kyiv
+            </h2>
+          </div>
+          <h1 class="mt-5 title">BarberShop</h1>
+          <div class="mt-5">
+            <p class="header__descr">
+              We are experts in trendy men's haircuts. <br />
+              We work quickly, carefully and with style.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- your header markup -->
+    </header>
+
+    <!-- Main content -->
+    <main></main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- your footer markup -->
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>
