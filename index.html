@@ -9,43 +9,77 @@
   <body>
     <!-- <div id="app"></div> -->
     <!-- Header -->
-    <header
-      class="pt-10 px-8 bg-[linear-gradient(rgba(25,28,38,.20),rgba(25,28,38,.20)),url(/img/slider-img-3.jpg)] bg-center bg-cover pb-52"
-    >
+    <header class="md:mx-10">
       <div class="container mx-auto">
-        <div class="">
-          <nav class="flex justify-between items-center">
-            <div><img src="/img/Logo.png" alt="logo" /></div>
+        <div class="md:grid md:grid-cols-12 md:gap-7.5">
+          <aside class="hidden md:col-span-2 pt-8 pb-10 md:block bg-cement">
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
-                  fill="white"
-                />
-              </svg>
+              <img
+                src="/img/Logo_black.png"
+                alt="logo"
+                class="w-17.5 h-14 block"
+              />
+              <div>
+                <a href="#"> Youtube </a>
+                <a href="#"> Instagram </a>
+              </div>
             </div>
-          </nav>
-          <div>
-            <h2
-              class="header__text mt-28 inline-flex items-center gap-6 before:content-[''] before:block before:h-[1px] before:w-15 before:bg-cement"
-            >
-              A hair salon for men in Kyiv
-            </h2>
-          </div>
-          <h1 class="mt-5 title">BarberShop</h1>
-          <div class="mt-5">
-            <p class="header__descr">
-              We are experts in trendy men's haircuts. <br />
-              We work quickly, carefully and with style.
-            </p>
+          </aside>
+          <div
+            class="bg-[linear-gradient(rgba(25,28,38,.20),rgba(25,28,38,.20)),url(/img/slider-img-3.jpg)] bg-center bg-cover pt-10 px-8 md:px-5 pb-52 md:pb-60 md:col-span-10"
+          >
+            <div class="hidden md:flex justify-between items-center">
+              <ul class="flex gap-4 nav__links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services and prices</a></li>
+                <li><a href="#">Barbers</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+              <div class="flex items-center gap-10">
+                <a
+                  href="tel:+38 044 111 11 11"
+                  class="hidden xl:block text-light"
+                  >+38 044 111 11 11</a
+                >
+                <button class="btn-default">Online-booking</button>
+              </div>
+            </div>
+
+            <nav class="flex justify-between items-center md:hidden">
+              <div>
+                <img src="/img/Logo.png" alt="logo" />
+              </div>
+              <div class="md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </nav>
+            <div class="md:px-20">
+              <h2
+                class="header__text mt-28 inline-flex items-center gap-6 before:content-[''] before:block before:h-[1px] before:w-15 before:bg-cement"
+              >
+                A hair salon for men in Kyiv
+              </h2>
+              <h1 class="mt-5 title">BarberShop</h1>
+              <div class="mt-5">
+                <p class="header__descr">
+                  We are experts in trendy men's haircuts. <br />
+                  We work quickly, carefully and with style.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
