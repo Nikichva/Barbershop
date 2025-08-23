@@ -19,6 +19,9 @@
   .header__descr {
     @apply text-cement text-base font-normal font-[Open_Sans] leading-[26px] tracking-[0.32px] md:text-lg md:leading-[30px];
   }
+  .vertical-rl {
+    writing-mode: vertical-rl;
+  }
 }
 
 @theme {
@@ -47,8 +50,13 @@
   .btn-default {
     @apply rounded-3xl border border-pomarancza text-center text-light font-[Open_Sans] text-xs font-semibold uppercase bg-transparent block px-5 py-3 cursor-pointer ease-linear duration-300 hover:bg-pomarancza;
   }
-
-  .btn-send {
-    @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
+  .aside__links {
+    @apply text-wetasphalt font-[Open_Sans] text-[11px] font-semibold  tracking-[2.2px];
   }
+  .aside__links a {
+    @apply hover:text-pomarancza ease-linear duration-300;
+  }
+  /* .btn-send {
+    @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
+  } */
 }
