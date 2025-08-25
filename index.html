@@ -6,11 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
   </head>
-  <body>
+  <body class="">
     <!-- <div id="app"></div> -->
     <!-- Header -->
-    <header class="md:mx-10">
+    <header class="md:mx-10 slidde">
       <div class="container mx-auto">
+        <div
+          class="header__menu pt-15 pl-10 transition duration-300 w-84 h-screen bg-light fixed top-0 right-0 transform-[translateX(100%)] opacity-0 md:hidden z-50"
+        >
+          <div class="right-0 w-5 h-5 absolute mr-10">
+            <span
+              class="header__menu-close block icon-cross text-wetasphalt text-xl md:invisible"
+            ></span>
+          </div>
+          <ul
+            class="mt-15 flex flex-col justify-center gap-6 text-wetasphalt font-semibold text-lg font-[Open_Sans]"
+          >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services and prices</a></li>
+            <li><a href="#">Barbers</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+          <a
+            href="tel:+38 044 111 11 11"
+            class="mt-16 block font-semibold text-lg font-[Open_Sans]"
+            >+38 044 111 11 11</a
+          >
+          <button class="btn-default mt-6 w-48 text-wetasphalt">
+            Online-booking
+          </button>
+          <div class="mt-18">
+            <a
+              href="#"
+              class="aside__links text-sm before:content-[''] before:block before:h-[1px] before:w-15 before:bg-wetasphalt inline-flex items-center gap-6"
+            >
+              Instagram
+            </a>
+            <a
+              href="#"
+              class="mt-6 aside__links text-sm before:content-[''] before:block before:h-[1px] before:w-15 inline-flex items-center gap-6"
+            >
+              Youtube
+            </a>
+          </div>
+        </div>
+
         <div class="md:grid md:grid-cols-12 md:gap-7.5">
           <aside
             class="hidden md:col-span-2 xl:col-span-1 pt-8 md:block bg-light"
@@ -60,7 +100,7 @@
               <div>
                 <img src="/img/Logo.png" alt="logo" />
               </div>
-              <div class="md:hidden">
+              <div class="md:hidden burger">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"

@@ -36,7 +36,8 @@
   --color-ui-disabled: #d2d2d2;
   --color-ui-error: #db0c35;
   --shadow-img-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  --shadow-btn-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4) inset;
+  --shadow-btn-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04),
+    0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.16);
 }
 
 @layer components {
@@ -45,16 +46,16 @@
   }
 
   .nav__links a {
-    @apply hover:text-pomarancza ease-linear duration-300;
+    @apply hover:text-pomarancza ease-linear duration-200;
   }
   .btn-default {
-    @apply rounded-3xl border border-pomarancza text-center text-light font-[Open_Sans] text-xs font-semibold uppercase bg-transparent block px-5 py-3 cursor-pointer ease-linear duration-300 hover:bg-pomarancza;
+    @apply rounded-3xl border border-pomarancza text-center text-light font-[Open_Sans] text-xs font-semibold uppercase bg-transparent block px-5 py-3 cursor-pointer ease-linear duration-200 hover:bg-pomarancza;
   }
   .aside__links {
     @apply text-wetasphalt font-[Open_Sans] text-[11px] font-semibold  tracking-[2.2px];
   }
   .aside__links a {
-    @apply hover:text-pomarancza ease-linear duration-300;
+    @apply hover:text-pomarancza ease-linear duration-200;
   }
   /* .btn-send {
     @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;

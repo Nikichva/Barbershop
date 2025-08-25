@@ -6,7 +6,34 @@ import "/src/styles/globals.css";
 // import and init any libs (e.g., Swiper) exactly like before
 // import Swiper from "swiper"; ...
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Init burger/menu handlers, sliders, form validation, etc.
-  // (the same code you had after the fragments were injected)
+const burger = document.querySelector(".burger");
+const close = document.querySelector(".header__menu-close");
+const menu = document.querySelector(".header__menu");
+const body = document.querySelector("body");
+// media query for MD breakpoint
+const md = window.matchMedia("(min-width: 768px)");
+
+function openMenu() {
+  menu.classList.add("transform-[translateX(0%)]", "opacity-100");
+  body.classList.add("bg-[linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70))]");
+  menu.classList.remove("transform-[translateX(100%)]");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMenu() {
+  menu.classList.remove("transform-[translateX(0%)]", "opacity-100");
+  menu.classList.add("transform-[translateX(100%)]");
+  body.classList.remove(
+    "bg-[linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70))]"
+  );
+  document.body.style.overflow = "";
+}
+burger.addEventListener("click", openMenu);
+close.addEventListener("click", closeMenu);
+// When media query are changed
+md.addEventListener("change", (e) => {
+  if (e.matches) {
+    // Now ≥768px — will reset menu and overflow
+    closeMenu();
+  }
 });
