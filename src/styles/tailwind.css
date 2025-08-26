@@ -22,6 +22,9 @@
   .vertical-rl {
     writing-mode: vertical-rl;
   }
+  .table-background {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 }
 
 @theme {
@@ -29,6 +32,7 @@
   --color-light: #fff;
   --color-pomarancza: #ff6c00;
   --color-wetasphalt: #303030;
+  --color-abgrey: #555;
 
   --color-dark: #232323;
   --color-ui-active: #d9d9d9;
@@ -36,8 +40,6 @@
   --color-ui-disabled: #d2d2d2;
   --color-ui-error: #db0c35;
   --shadow-img-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  --shadow-btn-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04),
-    0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.16);
 }
 
 @layer components {
@@ -56,6 +58,9 @@
   }
   .aside__links a {
     @apply hover:text-pomarancza ease-linear duration-200;
+  }
+  .about__text {
+    @apply text-abgrey mt-5 font-[Open_Sans] font-normal text-sm md:text-base leading-[26px];
   }
   /* .btn-send {
     @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
