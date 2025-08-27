@@ -25,6 +25,10 @@
   .table-background {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
+  .tbbb {
+    background: url(/img/bg-prices_tab.png) rgb(22, 24, 28) 50% / cover
+      no-repeat;
+  }
 }
 
 @theme {
@@ -61,6 +65,12 @@
   }
   .about__text {
     @apply text-abgrey mt-5 font-[Open_Sans] font-normal text-sm md:text-base leading-[26px];
+  }
+  .text-prices {
+    @apply text-right;
+  }
+  tr {
+    @apply flex justify-between;
   }
   /* .btn-send {
     @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
