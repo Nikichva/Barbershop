@@ -15,14 +15,14 @@ const md = window.matchMedia("(min-width: 768px)");
 
 function openMenu() {
   menu.classList.add("transform-[translateX(0%)]", "opacity-100");
+  menu.classList.remove("transform-[translateX(100%)]", "opacity-0");
   body.classList.add("bg-[linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70))]");
-  menu.classList.remove("transform-[translateX(100%)]");
   document.body.style.overflow = "hidden";
 }
 
 function closeMenu() {
   menu.classList.remove("transform-[translateX(0%)]", "opacity-100");
-  menu.classList.add("transform-[translateX(100%)]");
+  menu.classList.add("transform-[translateX(100%)]", "opacity-0");
   body.classList.remove(
     "bg-[linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70))]"
   );
