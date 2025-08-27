@@ -37,6 +37,8 @@
   --color-pomarancza: #ff6c00;
   --color-wetasphalt: #303030;
   --color-abgrey: #555;
+  --color-card-bg: #f7f7f7;
+  --shadow-card-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1);
 
   --color-dark: #232323;
   --color-ui-active: #d9d9d9;
@@ -64,13 +66,22 @@
     @apply hover:text-pomarancza ease-linear duration-200;
   }
   .about__text {
-    @apply text-abgrey mt-5 font-[Open_Sans] font-normal text-sm md:text-base leading-[26px];
+    @apply text-abgrey mt-5 font-[Open_Sans] font-normal text-base md:text-lg leading-[26px];
   }
   .text-prices {
     @apply text-right;
   }
   tr {
     @apply flex justify-between;
+  }
+  .reasons__card {
+    @apply w-full md:w-52.5  bg-card-bg shadow-card-shadow py-5 px-9;
+  }
+  .reasons__number {
+    @apply text-center text-wetasphalt font-[Open_Sans] text-[42px] font-bold;
+  }
+  .reasons__descr {
+    @apply text-center text-wetasphalt font-[Open_Sans] text-[11px] font-semibold;
   }
   /* .btn-send {
     @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
