@@ -86,4 +86,16 @@
   /* .btn-send {
     @apply w-55 h-10 text-base focus:outline-ceramic focus:outline focus:border-ceramic lg:active:outline-ceramic lg:active:outline lg:active:border-ceramic lg:active:text-dark lg:hover:text-ceramic lg:hover:border-ceramic disabled:text-ui-disabled disabled:border-ui-disabled;
   } */
+  .barber__name {
+    @apply mt-7.5 text-wetasphalt text-center font-[Open_Sans] text-lg tracking-[0.36px] leading-[166.667%];
+  }
+  .barber__status {
+    @apply mt-[3px] text-center text-pomarancza font-[Open_Sans] text-sm;
+  }
+  .barber__social {
+    @apply bg-light w-11 h-11 block p-3 rounded-3xl;
+  }
+  .barber__social {
+    @apply hover:text-pomarancza ease-linear duration-200;
+  }
 }
