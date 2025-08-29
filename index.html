@@ -359,19 +359,19 @@
 
       <section class="py-21 md:py-25 px-8 bg-card-bg">
         <div class="container mx-auto">
-          <div>
-            <h3
-              class="text-wetasphalt font-[Open_Sans] text-[11px] font-semibold uppercase inline-flex items-center before:content-[''] before:block before:h-[1px] before:w-15 before:bg-wetasphalt gap-5"
-            >
-              For true enjoyers of the atmosphere
-            </h3>
-            <h2 class="text-wetasphalt text-3xl font-bold mt-5 lg:text-5xl">
-              Our barbers
-            </h2>
-          </div>
-          <div
-            class="flex flex-col xl:flex-row items-center xl:items-start justify-center mt-11 gap-16 xl:gap-7.5"
-          >
+          <!-- One grid that holds headers and cards so headers align to grid's left -->
+          <div class="grid justify-center gap-y-11 xl:grid-cols-3 xl:gap-x-7.5">
+            <div class="col-span-full">
+              <h3
+                class="text-wetasphalt font-[Open_Sans] text-[11px] font-semibold uppercase inline-flex items-center before:content-[''] before:block before:h-[1px] before:w-15 before:bg-wetasphalt gap-5"
+              >
+                For true enjoyers of the atmosphere
+              </h3>
+              <h2 class="text-wetasphalt text-3xl font-bold mt-5 lg:text-5xl">
+                Our barbers
+              </h2>
+            </div>
+
             <div class="max-w-104.5">
               <img src="/img/img-1_418.jpg" alt="barber" />
               <p class="barber__name">John Smith</p>
@@ -394,7 +394,7 @@
 
             <div class="max-w-104.5">
               <img src="/img/img-2_418.jpg" alt="barber" />
-              <p class="barber__name">John Smith</p>
+              <p class="barber__name">Michele Doe</p>
               <div class="mt-7.5 flex justify-center gap-2.5">
                 <a href="#" class="barber__social"
                   ><span class="icon-instagram text-[20px]"></span
@@ -413,7 +413,7 @@
 
             <div class="max-w-104.5">
               <img src="/img/img-3_418.jpg" alt="barber" />
-              <p class="barber__name">John Smith</p>
+              <p class="barber__name">Alan Black</p>
               <div class="mt-7.5 flex justify-center gap-2.5">
                 <a href="#" class="barber__social"
                   ><span class="icon-instagram text-[20px]"></span
