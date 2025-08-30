@@ -38,6 +38,7 @@
   --color-wetasphalt: #303030;
   --color-abgrey: #555;
   --color-card-bg: #f7f7f7;
+  --color-form-bg: #191c26;
   --shadow-card-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1);
 
   --color-dark: #232323;
@@ -97,5 +98,18 @@
   }
   .barber__social {
     @apply hover:text-pomarancza ease-linear duration-200;
+  }
+
+  textarea {
+    @apply resize-none w-full h-20 border-b-1 border-b-cement text-light  bg-transparent focus:border-b-light  focus:outline focus:outline-transparent lg:hover:border-b-light placeholder:text-cement placeholder:font-[Open_Sans] placeholder:text-[11px] placeholder:font-semibold
+    placeholder:tracking-[1.1px] placeholder:uppercase focus:placeholder:text-light hover:placeholder:text-light;
+  }
+  #footer_form .just-validate-error-field {
+    @apply placeholder:text-ui-error border-ui-error;
+  }
+  .footer_input {
+    @apply w-full h-8 md:w-80.5 lg:w-49 xl:w-67.5 bg-transparent placeholder:text-cement placeholder:font-[Open_Sans] placeholder:text-[11px] placeholder:font-semibold
+    placeholder:tracking-[1.1px] placeholder:uppercase focus:placeholder:text-light hover:placeholder:text-light 
+    border-b-1 border-b-cement  focus:border-b-light  focus:outline focus:outline-transparent lg:hover:border-b-light text-light text-sm font-normal;
   }
 }

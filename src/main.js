@@ -2,6 +2,7 @@
 import "/src/styles/tailwind.css";
 import "/src/styles/icomoon.css";
 import "/src/styles/globals.css";
+import JustValidate from "just-validate";
 
 // import and init any libs (e.g., Swiper) exactly like before
 // import Swiper from "swiper"; ...
@@ -37,3 +38,51 @@ md.addEventListener("change", (e) => {
     closeMenu();
   }
 });
+
+// const validate = new JustValidate("#form");
+try {
+  const validator = new JustValidate("#footer_form");
+
+  validator
+    .addField("#name", [
+      {
+        rule: "required",
+        errorMessage: "Fill the name",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Min 2 char!",
+      },
+    ])
+    .addField("#phone", [
+      {
+        rule: "required",
+        errorMessage: "Enter the phone number",
+      },
+      {
+        rule: "number",
+        errorMessage: "Not a number",
+      },
+      {
+        rule: "minLength",
+        value: 9,
+        errorMessage: "Incorrect phone number!",
+      },
+    ])
+
+    .onSuccess((event) => {
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+
+      fetch("https://httpbin.org/post", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Success", data);
+          form.reset();
+        });
+    });
+} catch (e) {}
