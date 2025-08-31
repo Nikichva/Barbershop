@@ -47,27 +47,27 @@ try {
     .addField("#name", [
       {
         rule: "required",
-        errorMessage: "Fill the name",
+        errorMessage: "Podaj imię",
       },
       {
         rule: "minLength",
         value: 2,
-        errorMessage: "Min 2 char!",
+        errorMessage: "Min 2 znaki!",
       },
     ])
     .addField("#phone", [
       {
         rule: "required",
-        errorMessage: "Enter the phone number",
+        errorMessage: "Podaj numer telefonu",
       },
       {
         rule: "number",
-        errorMessage: "Not a number",
+        errorMessage: "To nie jest liczba",
       },
       {
         rule: "minLength",
         value: 9,
-        errorMessage: "Incorrect phone number!",
+        errorMessage: "Nieprawidłowy numer telefonu!",
       },
     ])
 
